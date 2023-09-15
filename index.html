@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang = "en">     <!--设定lang = “en”防止报错-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPY's Forum</title>  <!--网页标题-->
+<link href="http://fonts.googleapis.com/css?family=Varela+Round"  rel="stylesheet">  <!--一些小小的装饰，包括给剧情，给标题，给回帖加颜色，定位置，描边-->
+<style>                               
+/*定义整个回帖框的样式*/
+ul li{
+    
+    font-size: larger;
+    color: rgb(1, 1, 0);
+    border : 2px solid #72adcd;
+    
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    display:flexbox;
+}
+ul li .btn{
+    float: right;
+    border-color: #fff;
+    color: rgb(249, 245, 245);
+    background-color: rgb(1, 8, 10);
+    background-size: 30px;
+    size: 30px;
+}
+ul li .btn2{
+    float: right;
+    border-color: #fff;
+    color: rgb(249, 245, 245);
+    background-color: rgb(1, 8, 10);
+    background-size: 30px;
+    
+    size: 30px;
+}
+.sentence{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: 20px;
+    line-height: 40px;
+    color:black;
+    border:2px solid #35187e;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom:35px;
+    padding:20px;
+  
+}
+.forum .btn{
+   
+    width: 160px; 
+        height: 35px; 
+        color: #fff; 
+        background: hsl(151, 63%, 8%); 
+        border: none; 
+        font-size: 14px; 
+        font-weight: bold; 
+        text-align: center; 
+        line-height: 35px; 
+        border-radius: 8px; 
+        cursor: pointer;
+}
+/*定义标题的样式*/
+header{
+    font-family:Baskerville,Palatino,sans-serif;
+    font-size:2em;
+    color:rgba(255,255,255,.8);
+    font-style:italic;
+    text-align:center;
+    margin-bottom:30px;
+    background-color:rgb(191,91,116);
+    border-radius:0 0 10px 10px;
+    padding:10px;
+}
+/*以下代码定义背景图片及颜色*/
+div.background { 
+    content: "";
+    background-image: url("https://thumbor.4gamers.com.tw/rcpr3k5-ozxE6X2m_aV0SkvpYHE=/800x0/filters:extract_cover():no_upscale():quality(80)/https%3A%2F%2Fimg.4gamers.com.tw%2Fckfinder%2Fimages%2FPanda%2Fnews%2F202209%2F220923-genshin-%20%289%29.jpg%3FversionId%3Dktu8r3hPOF_Nfj5.vNiJCJEN1ikcLoQ8");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-image :no-repeat;
+    background-size: cover;
+}
+
+.f{
+   margin-top: auto;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.f.h{
+    margin-top: auto;
+    padding-left: 10px;
+    font-size: larger;
+}    
+.f.p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:  medium;
+}
+.f.p{
+    font-size: 10px;
+    padding-bottom: 10px;
+    display:inline-block ;
+    width: 220px;
+    vertical-align: middle;
+}
+.ipost{
+    position:center ; 
+    background: #ffffff; 
+    border: 1px #cccccc solid; 
+    width: 500px; left: 65px; 
+    top:70px; padding: 10px; 
+    font-size: 19px; 
+    z-index: 999999; 
+    display: none;
+}
+.ipost .title{
+    width: 450px; 
+    height:30px; 
+    line-height: 30px; 
+    display: block; 
+    border: 1px #cecece solid; 
+    margin-bottom: 10px;
+}
+
+.ipost .content{
+        width: 450px; 
+        height: 200px; 
+        display: block;
+        margin: 10px 0;
+        border: 1px #cecece solid;
+}
+.ipost .btn{
+        width: 160px; 
+        height: 35px; 
+        color: #fff; 
+        background: hsl(151, 63%, 8%); 
+        border: none; 
+        font-size: 14px; 
+        font-weight: bold; 
+        text-align: center; 
+        line-height: 35px; 
+        border-radius: 8px; 
+        cursor: pointer;
+}
+
+</style>
+<header>
+    <b>SPY's Forum</b>
+</header>
+<body>
+    <div class = "background"></div>
+    <p class = "sentence">
+       <b> SPY：</b>当时我在报名表面前脑子里是没知识的，我要在ACEE和你之间选一个，我知道我怎么选都会后悔。<br>
+
+       <b>电路板板：</b>你这么说好像你做对了，你做出来了网页，html，css，js一家人可以团聚了，你也能功德圆满了。但是为什么选的不能是我！！<br>
+        
+        <b>SPY：</b>板板，如果七天前我选你，让网页去si，你觉得这七天你会过得开心吗？<br>
+        
+        <b>电路板板：</b>七天，七天！你知道这七天我是怎么过的吗，你知道吗！<br> 
+        <b>SPY：</b>板板......<br>
+        <b>电路板板：</b> 板板已经烧坏了！你选的吗，偶像！<br></p>
+    <div class = "f">
+    <section>
+        
+        <ul id = "id3">   <!--此处为节点插入部位-->
+            <li class = "tempt">
+                <h><b>标题：</b>看在板板的面子上，给个机会</h><span> <em>||这里是时间捏</em></span>
+                <p><b>内容：</b>呜呜呜</p>
+                
+            </li>
+        </ul>
+    </section>
+    </div>
+    
+    <div class = "forum">
+       <div  id="id1">
+        <input type = "button" class = "btn" value = "发帖" onclick = "POST()"> 
+        <div class = "ipost" id = "id2">
+            <input id = "title" class="title" placeholder = "请输入标题">
+            <label for = "cnt"> 输入文本</label><textarea id = "cnt" class = "content"> </textarea>
+            <input type = "button" class = "btn" value = "发布" onclick = "rpost()"> 
+        </div>
+       </div>
+    </div>
+</body>
+</html>
+<script>
+    //十分抱歉，localstorage部分未能按要求完成，其他部分完成情况和代码实现思路如下（包括localstorage的尝试代码）。
+    document.addEventListener('DOMContentLoaded', I_come_back); //添加监听器，若网页加载完成，则触发函数读取localstorage中的数据，将标题，时间，内容依次插入到节点中。
+    if(localStorage.getItem("a")!=null){ //判断localstorage中是否有元素，无元素则不执行 
+        function I_come_back(){
+        var val = localStorage.getItem("a");
+        var remake = JSON.parse(val); //变为字符串形形式
+
+        var ul = document.getElementsByTagName("ul")[0];//ul的第一个子节点
+        var li = document.createElement("li");
+        ul.appendChild(li);
+
+        for(const sample of remake){
+            const sample_content = document.createElement("div"); //将所有元素均命名为一个新节点 
+             sample_content.innerHTML = sample;
+             li.appendChild(sample_content); //节点的递增
+
+        }
+        ul.insertBefore(li, ul.firstElementChild); //节点的插入
+        }
+    }
+
+    function POST(){ //POST函数实现发帖框的显示。
+        document.getElementById("id2").style.display = "block";
+    }
+    function rpost(){ //rpost函数执行回帖。
+        document.getElementById("id2").style.display = "none"; //完成回帖操作后，隐藏回帖区域
+
+        var ul = document.getElementsByTagName("ul")[0];//ul的第一个子节点
+        var li = document.createElement('li'); //创建新节点
+        var h = document.createElement("h");
+        var p = document.createElement("p");
+        var span = document.createElement("span");
+        
+        var btn = document.createElement("input"); //创建按钮，input节点
+        var btn2 = document.createElement("input");
+        
+        ul.appendChild(li);//节点延伸
+         //标明类名，使结构清晰
+        li.appendChild(h);
+        
+        li.appendChild(span);
+        
+        li.appendChild(btn);
+        btn.className = ".f section ul li btn";
+        li.appendChild(btn2);
+        btn2.className = ".f section ul li btn2";
+        li.appendChild(p);
+        p.className = ".f section ul li p";
+         //自此，节点结构为section ul li （h span p btn btn2）其中（）内的节点互为兄弟节点，在上述节点延伸过程中要十分注意延伸的顺序，否则兄弟节点直接的呈现顺序很可能发生错乱。
+
+
+       
+       
+        //调用data-fns库实现日期的显示。
+        var today = new Date();
+        var year = today.getFullYear();//年
+        var month = today.getMonth() + 1;//月
+        var day = today.getDate();//日
+        var hour = today.getHours();//时
+        var minute = today.getMinutes();//分
+        var second = today.getSeconds();//秒
+
+        span.innerHTML ="||" +"<b>发表时间：</b>" + year + "-" + month + "-" + day + "&nbsp;" + hour + ":" + minute + ":" + second;
+        
+        
+        //以下是正则表达式判断敏感词部分
+        var re = /shit|fuck|bitch/gi; //创建正则表达式：在全局内不分大小写匹配肮脏词汇
+        //PS：本人尝试期间曾使用中文肮脏词汇，但显示结果中有不规则的*，本人并未查明原因。
+        p.innerHTML ="<b>内容:</b> " + document.getElementById("cnt").value.replace(re,"*");
+        h.innerHTML = "<b>标题：</b>" + document.getElementById("title").value.replace(re,"*");//将所有肮脏词汇替换成*
+        //以下是删除修改部分
+        btn.type = "button";
+        btn.value = "删除";
+        btn.onclick = function _delete(){
+            btn.parentNode.remove(); //移除btn的父节点的所有子节点，删除该回帖全部内容
+        }
+        
+        btn2.type = "button";
+        btn2.value = "修改";
+        btn2.onclick = function _rewrite(){
+            var newTitle = prompt("输入要修改的标题");//在网页上显示弹窗，输入要修改的内容
+            var newContent = prompt("输入要修改的内容");
+            h.innerHTML = "<b>标题：</b>" +newTitle.replace(re,"*");
+            p.innerHTML = "<b>内容:</b> "+newContent.replace(re,"*");//利用正则表达式再次进行肮脏词汇的替换
+        }
+        localStorage.setItem("a",JSON.stringify({head:h.innerHTML,time:span.innerHTML,content:p.innerHTML}));
+        //将加工完成之后的h，p，span进行localstorage储存。利用JSON。stringfy转换为JSON字符串
+        document.getElementById("title").value = "";
+        document.getElementById("cnt").value = "";
+        //清空回帖栏中的内容
+        
+        ul.insertBefore(li, ul.firstElementChild);
+        //将ul连带其所有子节点插入到原html框架中的ul第一个子节点下
+    }
+    
+    
+</script>
